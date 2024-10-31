@@ -1,0 +1,25 @@
+/* Inicializando el diseño */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* tamaño de la imagen  */
+img {
+    width: 20%;
+    border-radius: 50%;
+}
+
+/* Diseñando la barra de navegacion*/
+#menu{
+    background-color: aqua;
+    z-index: 2;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 50%;
+    padding: 2%;
+}
+
