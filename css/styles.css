@@ -68,3 +68,14 @@ header {
     text-decoration: none;
     font-size: 25px;
 }
+
+/* inicio de la pagina */
+main{
+    padding: 5%;
+    width: 63%;
+}
+
+.presentacion{
+    border: 2px solid black;
+    padding: 2%;
+}
