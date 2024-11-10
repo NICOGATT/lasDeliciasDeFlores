@@ -27,17 +27,15 @@ img {
     left: 0;
     width: 20%;
     padding: 2%;
+    transform: translateX(-100%);
     transition: tranform 0.5s ease, opacity 0.5s ease;
+    display: none;
 }
 /*transiciones*/
 #menu.show{
     transform: translateX(0);
     opacity: 1;
-}
-
-#menu.hidden{
-    transform: translateX(-100%);
-    opacity: 0;
+    display: block;
 }
 
 
