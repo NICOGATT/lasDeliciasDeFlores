@@ -20,6 +20,7 @@ img {
 /* Diseñando la barra de navegacion*/
 #menu{
     background-color: rgb(229, 207, 166);
+    box-shadow: 5px 0 15px gray;
     z-index: 2;
     height: 100%;
     position: fixed;
@@ -28,14 +29,22 @@ img {
     width: 20%;
     padding: 2%;
     transform: translateX(-100%);
-    transition: tranform 0.5s ease, opacity 0.5s ease;
-    display: none;
+    opacity: 0;
+    pointer-events: none;
 }
 /*transiciones*/
 #menu.show{
     transform: translateX(0);
     opacity: 1;
-    display: block;
+    pointer-events: auto;
+    transition: transform 0.5s ease-out, opacity 0.5s ease-out;
+}
+
+#menu.hidden{
+    transform: translateX(-100%);
+    opacity: 0;
+    pointer-events: none;
+    transition: transform 0.3s ease-in, opacity 0.3s ease-in;
 }
 
 
@@ -76,4 +85,14 @@ main{
 .presentacion{
     border: 2px solid black;
     padding: 2%;
+}
+
+/*Menu hamburguesa*/
+
+#menu_hamburguer{
+    cursor: pointer;
+}
+
+#cerrarNav{
+    cursor: pointer;
 }

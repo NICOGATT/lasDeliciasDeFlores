@@ -7,10 +7,12 @@ document.addEventListener("DOMContentLoaded", function() {
     
     
     abrirNav.addEventListener("click", () => {
+        nav.classList.remove("hidden")
         nav.classList.add("show")
     })
     cerrarNav.addEventListener("click", () => {
         nav.classList.remove("show")
+        nav.classList.add("hidden")
     })
 
 })
